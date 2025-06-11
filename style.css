@@ -1,0 +1,99 @@
+body, html {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    font-size: 2rem;
+}
+
+.label-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+input {
+    font-size: 1.8rem;
+}
+
+.turn {
+    color: white;
+    display: none;
+}
+
+.board {
+    display: grid;
+    height: 500px;
+    width: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 1px solid black;
+    gap: 2px;
+    padding: 2px;
+    background-color: yellow;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5rem;
+    border: 1px solid grey;
+    background-color: lightyellow;
+    cursor: pointer;
+}
+
+.overlay, form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay {
+    display: none;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 20px;
+    padding-block-start: 20px;
+    text-align: center;
+    border: 2px solid green;
+    background-color: #e0ffe0;
+    border-radius: 5px;
+}
+
+.message p {
+    font-size: 1.8rem;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
